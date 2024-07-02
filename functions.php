@@ -1,5 +1,14 @@
 <?php
 
+define('WEBSITE_URL', 'https://app.wordtune.com');
+define('REFERER_URL', 'https://app.wordtune.com');
+define('WEBSITE_HLS', 'https://hls-c.udemycdn.com');
+define('WEBSITE_DASH', 'https://dash-enc-c.udemycdn.com');
+define('WEBSITE_CLOUDSOLUTIONS', 'https://app.wordtune.com');
+define('COOKIE_FILE', __DIR__ . '/cookie.word.txt');
+// define('AGENT', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36');
+define('AGENT', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0');
+
 //  if(!isset($_SERVER['HTTP_REFERER'])){
 // header('Location: https://seoshope.com');
 // }
@@ -15,11 +24,6 @@ if($_SERVER['REQUEST_URI'] === "/user/logout/"){
 }
 
 
-define('WEBSITE_URL', 'https://expedia.udemy.com');
-define('WEBSITE_HLS', 'https://hls-c.udemycdn.com');
-define('WEBSITE_DASH', 'https://dash-enc-c.udemycdn.com');
-define('WEBSITE_CLOUDSOLUTIONS', 'https://expedia.udemy.com');
-define('COOKIE_FILE', __DIR__ . '/cookiehegwew.txt');
 
 function initRequest($url){
     $response = makeRequest($url);
@@ -28,6 +32,7 @@ function initRequest($url){
     $responseInfo = $response["responseInfo"];
     //$infos = $response["infos"];
     $contentType = isset($responseInfo["content_type"]) ? $responseInfo["content_type"] : 'text/html';
+
     if (stripos($contentType, "text/html") !== false) {
         header("Content-Type: text/html");
         echo proxify($responseBody);
@@ -49,15 +54,15 @@ function makeRequest($url)
     unset($browserRequestHeaders["Pragma"]);
     unset($browserRequestHeaders["Connection"]);
     unset($browserRequestHeaders['Cookie']);
-    $agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36';
-    $referer = 'https://expedia.udemy.com';
+    $agent = AGENT;
+    $referer = REFERER_URL;
     $browserRequestHeaders['User-Agent'] = $agent;
     $browserRequestHeaders['Origin'] = WEBSITE_URL;
     $browserRequestHeaders['Referer'] = $referer;
-    /*$browserRequestHeaders['Cookie'] = str_replace($_SERVER['HTTP_HOST'], $parse['host'], $browserRequestHeaders['Cookie']);
-    if(preg_match('#'.preg_quote(WEBSITE_URL_MARKETPLACE).'#', $url)){
-        $browserRequestHeaders['Sec-Fetch-Site'] = 'cross-site';
-    }*/
+    // $browserRequestHeaders['Cookie'] = str_replace($_SERVER['HTTP_HOST'], $parse['host'], $browserRequestHeaders['Cookie']);
+    // if(preg_match('#'.preg_quote(WEBSITE_URL_MARKETPLACE).'#', $url)){
+    //     $browserRequestHeaders['Sec-Fetch-Site'] = 'cross-site';
+    // }
     $ch = curl_init();
     curl_setopt_array($ch, array(
         CURLOPT_URL => $url,
@@ -99,13 +104,13 @@ function makeRequest($url)
     curl_setopt($ch, CURLOPT_HTTPHEADER, $curlRequestHeaders);
     $err = curl_error($ch);
     $response = curl_exec($ch);
- $response = str_replace('list-menu--list-menu-container--21IlT popper--popper--2r2To"', 'list-menu--list-menu-container--21IlT popper--popper--2r2To" style="display:none;"', $response);
-     $response = str_replace('srf-navbar__right"', 'srf-navbar__right" style="display:none;"', $response);
-
+    // $response = str_replace('list-menu--list-menu-container--21IlT popper--popper--2r2To"', 'list-menu--list-menu-container--21IlT popper--popper--2r2To" style="display:none;"', $response);
+    // $response = str_replace('srf-navbar__right"', 'srf-navbar__right" style="display:none;"', $response);
     $responseInfo = curl_getinfo($ch);
     $headerSize = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
     $infos = curl_getinfo($ch);
     curl_close($ch);
+
     $responseHeaders = substr($response, 0, $headerSize);
     return array("headers" => $responseHeaders, "body" => $response, "responseInfo" => $responseInfo, 'infos'=>$infos);
 }
@@ -115,6 +120,7 @@ function proxify($result)
     $parseHls = parse_url(WEBSITE_HLS);
     $parseDash = parse_url(WEBSITE_DASH);
     $parseCloud = parse_url(WEBSITE_CLOUDSOLUTIONS);
+
     $result = str_replace(
         [
             '\/'.$parseHls['host'] . '\/',
@@ -141,6 +147,7 @@ function proxify($result)
     if(isset($_SERVER['REQUEST_SCHEME']) && $_SERVER['REQUEST_SCHEME'] == 'http' && $parse['scheme'] == 'https'){
         $result = str_replace('https://', 'http://', $result);
     }
+
     return $result;
 }
 
