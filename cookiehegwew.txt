@@ -1,0 +1,45 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file! Do not edit.
+
+# Domain	Subdomain	Path	Secure	Expire	Name	Value
+.app.neilpatel.com	TRUE	/	FALSE	1717921914	_vwo_uuid_v2	D1D6721B8AF994CDF01269E84FCE8836C|470be1f8a08779c31aeccb1432108bb4
+.app.neilpatel.com	TRUE	/	TRUE	1686472313	id	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYTkxOWQwNjYtNzdiYi00N2QxLTk5YzYtNzcxM2I3ODg5MjExIiwiZXhwIjoxNjg2NDcyMzEzfQ.rah0lrLHNuHxFO7-fU_Z26Z1cZQPdiM8PgNcyAfeoiw
+.neilpatel.com	TRUE	/	FALSE	1694075515	_fbp	fb.1.1683110208291.1896793926
+.neilpatel.com	TRUE	/	FALSE	1690886209	_gcl_au	1.1.822999278.1683110209
+.neilpatel.com	TRUE	/	FALSE	1701851514	hubspotutk	d490e0ead154af35a3151b050310c4d0
+.neilpatel.com	TRUE	/	FALSE	1717835514	__zlcmid	1FglnD0th4LIZ4L
+.neilpatel.com	TRUE	/	TRUE	1717835514	_hjSessionUser_2058125	eyJpZCI6IjY3MTJlZWE0LTQ1NDctNTdjZC1iODdiLTk3YTdjZTIyYjM4MCIsImNyZWF0ZWQiOjE2ODMxMTAyMDc2NzQsImV4aXN0aW5nIjp0cnVlfQ==
+.neilpatel.com	TRUE	/	FALSE	1716806223	_tt_enable_cookie	1
+.neilpatel.com	TRUE	/	FALSE	1716806223	_ttp	U3ANeA8wwQmSAHaSF6nNj_By3P4
+.neilpatel.com	TRUE	/	FALSE	1717769283	km_lv	x
+.neilpatel.com	TRUE	/	FALSE	1691798400	_gaexp	GAX1.2.SrpSAK7KTKer6daR1ybcCA.19568.x823!67ZHo3HVRautGsDngIcKMQ.19581.x498
+.neilpatel.com	TRUE	/	FALSE	1720859417	mutiny.user.token	1530b6a1-f618-403a-895b-92a1cb5796fe
+.neilpatel.com	TRUE	/	FALSE	1686301217	mutiny.user.session	0bfa26e0-ca0c-4c85-a6d8-2bd666b27d49
+.neilpatel.com	TRUE	/	FALSE	1686301314	mutiny.user.session_number	1
+.neilpatel.com	TRUE	/	FALSE	1686301314	km_vs	1
+.neilpatel.com	TRUE	/	TRUE	1686299634	_hjIncludedInSessionSample_2058125	0
+.neilpatel.com	TRUE	/	TRUE	1686301314	_hjSession_2058125	eyJpZCI6IjIxZDk2NWM5LWM4ZmItNDdjMi05OWJkLWVmMTVhNDQ2NGFiMSIsImNyZWF0ZWQiOjE2ODYyOTk0MTg0NjQsImluU2FtcGxlIjpmYWxzZX0=
+.neilpatel.com	TRUE	/	TRUE	1686301314	_hjAbsoluteSessionInProgress	0
+.neilpatel.com	TRUE	/	FALSE	1717835418	_clck	1okpuv|2|fcb|0|1227
+.neilpatel.com	TRUE	/	FALSE	1686385914	_gid	GA1.2.64233625.1686299419
+.neilpatel.com	TRUE	/	FALSE	1701851514	__hstc	240018588.d490e0ead154af35a3151b050310c4d0.1683110210080.1685164651741.1686299420052.10
+.neilpatel.com	TRUE	/	FALSE	0	__hssrc	1
+.neilpatel.com	TRUE	/	FALSE	1686299540	_gat_UA-16137731-1	1
+.neilpatel.com	TRUE	/	FALSE	1686385914	_uetsid	ddc2e120069f11eebb24030f1e83644e
+.neilpatel.com	TRUE	/	FALSE	1719995514	_uetvid	680d97b0e99e11ed86269de432c1fa79
+.neilpatel.com	TRUE	/	FALSE	1720859514	_ga_PE1RZ8MRZD	GS1.1.1686299418.14.1.1686299514.27.0.0
+.neilpatel.com	TRUE	/	FALSE	1720859514	_ga_6QNYJFNF1D	GS1.1.1686299418.14.1.1686299514.27.0.0
+.neilpatel.com	TRUE	/	FALSE	1720859514	_ga	GA1.2.1013645184.1683110208
+.neilpatel.com	TRUE	/	FALSE	0	kvcd	1686299514708
+.neilpatel.com	TRUE	/	FALSE	1720859514	amp_276990	VcfXTDPghK82To54941-LD.YTkxOWQwNjYtNzdiYi00N2QxLTk5YzYtNzcxM2I3ODg5MjEx..1h2fke7h5.1h2fkh59b.7.0.7
+.neilpatel.com	TRUE	/	FALSE	1720859514	km_ai	gollapudi%40fastmail.com
+.neilpatel.com	TRUE	/	FALSE	1720859514	km_ni	gollapudi%40fastmail.com
+.neilpatel.com	TRUE	/	FALSE	1686385914	_clsk	1dxr5bx|1686299514790|3|1|y.clarity.ms/collect
+.neilpatel.com	TRUE	/	FALSE	1686301314	__hssc	240018588.2.1686299420052
+app.neilpatel.com	FALSE	/api	FALSE	0	lifetime_offer_until	2023-06-02T20:58:31+00:00
+app.neilpatel.com	FALSE	/en	FALSE	1687776453	1315-Ubersuggest-APP-New_Sticky_Bar-v1	1
+app.neilpatel.com	FALSE	/en	FALSE	1687776453	1178_Ubersuggest_Pricing_Redesign	1
+app.neilpatel.com	FALSE	/	FALSE	1686385818	ln_or	eyIzOTExNDIwIjoiZCJ9
+app.neilpatel.com	FALSE	/	TRUE	0	_hjHasCachedUserAttributes	true
+

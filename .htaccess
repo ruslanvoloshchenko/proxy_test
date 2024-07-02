@@ -1,0 +1,36 @@
+
+
+
+# ########### AMEMBER START #####################
+# Options +FollowSymLinks 
+# RewriteEngine On
+
+# # if cookie is set and file exists, stop rewriting and show page
+# RewriteCond %{HTTP_COOKIE} amember_nr=([a-zA-Z0-9]+)
+# RewriteCond /home/u163169910/domains/toolzbuy.com/public_html/app/data/new-rewrite/%1-56 -f
+# RewriteRule ^(.*)$ - [S=3]
+
+# # if cookie is set but folder file does not exists, user has no access to given folder
+# RewriteCond %{HTTP_COOKIE} amember_nr=([a-zA-Z0-9]+)
+# RewriteCond /home/u163169910/domains/toolzbuy.com/public_html/app/data/new-rewrite/%1-56 !-f
+# RewriteRule ^(.*)$ https://app.toolzbuy.com/no-access/folder/id/56?url=%{REQUEST_URI}?%{QUERY_STRING}&host=%{HTTP_HOST}&ssl=%{HTTPS} [L,R]
+
+# ## if user is not authorized, redirect to login page
+# # BrowserMatch "MSIE" force-no-vary
+# RewriteCond %{QUERY_STRING} (.+)
+# RewriteRule ^(.*)$ https://app.toolzbuy.com/protect/new-rewrite?f=56&url=%{REQUEST_URI}?%1&host=%{HTTP_HOST}&ssl=%{HTTPS} [L,R,B]
+# RewriteRule ^(.*)$ https://app.toolzbuy.com/protect/new-rewrite?f=56&url=%{REQUEST_URI}&host=%{HTTP_HOST}&ssl=%{HTTPS} [L,R]
+# ########### AMEMBER FINISH ####################
+
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-cache, no-store, must-revalidate"
+  Header set Pragma "no-cache"
+  Header set Expires 0
+</IfModule>
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?path=$1 [NC,L,QSA]
+
