@@ -1,0 +1,68 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "9c875e9c1f63b4f746bf6e4a61a7ea92",
+    "packages": [
+        {
+            "name": "kelvinzer0/curl-impersonate-php",
+            "version": "v3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kelvinzer0/curl-impersonate-php.git",
+                "reference": "a810c43d02482bae488f7e3a21f65ec8fbbd451c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kelvinzer0/curl-impersonate-php/zipball/a810c43d02482bae488f7e3a21f65ec8fbbd451c",
+                "reference": "a810c43d02482bae488f7e3a21f65ec8fbbd451c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CurlImpersonate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kelvin Yuli Andrian",
+                    "homepage": "https://kelvinzer0.github.io",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Curl-Impersonate-PHP - Library to execute HTTP requests using cURL in PHP with the ability to impersonate the behavior of major browsers (Chrome, Firefox, Safari, and Microsoft Edge).",
+            "homepage": "https://github.com/kelvinzer0/curl-impersonate-php",
+            "keywords": [
+                "browser",
+                "curl",
+                "http",
+                "http-client",
+                "impersonation"
+            ],
+            "support": {
+                "issues": "https://github.com/kelvinzer0/curl-impersonate-php/issues",
+                "source": "https://github.com/kelvinzer0/curl-impersonate-php/tree/v3.2"
+            },
+            "time": "2023-12-20T12:04:39+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

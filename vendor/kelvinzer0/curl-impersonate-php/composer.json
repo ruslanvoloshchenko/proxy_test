@@ -1,0 +1,29 @@
+{
+  "name": "kelvinzer0/curl-impersonate-php",
+  "description": "Curl-Impersonate-PHP - Library to execute HTTP requests using cURL in PHP with the ability to impersonate the behavior of major browsers (Chrome, Firefox, Safari, and Microsoft Edge).",
+  "type": "library",
+  "keywords": ["curl", "http", "http-client", "browser", "impersonation"],
+  "homepage": "https://github.com/kelvinzer0/curl-impersonate-php",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kelvin Yuli Andrian",
+      "homepage": "https://kelvinzer0.github.io",
+      "role": "Maintainer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CurlImpersonate\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/lwthiker/curl-impersonate"
+    }
+  ],
+  "require": {
+        "php": ">=5.4.0"
+  }
+}

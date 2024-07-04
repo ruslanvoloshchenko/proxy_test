@@ -1,0 +1,58 @@
+{
+    "packages": [
+        {
+            "name": "kelvinzer0/curl-impersonate-php",
+            "version": "v3.2",
+            "version_normalized": "3.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kelvinzer0/curl-impersonate-php.git",
+                "reference": "a810c43d02482bae488f7e3a21f65ec8fbbd451c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kelvinzer0/curl-impersonate-php/zipball/a810c43d02482bae488f7e3a21f65ec8fbbd451c",
+                "reference": "a810c43d02482bae488f7e3a21f65ec8fbbd451c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "time": "2023-12-20T12:04:39+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "CurlImpersonate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kelvin Yuli Andrian",
+                    "homepage": "https://kelvinzer0.github.io",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Curl-Impersonate-PHP - Library to execute HTTP requests using cURL in PHP with the ability to impersonate the behavior of major browsers (Chrome, Firefox, Safari, and Microsoft Edge).",
+            "homepage": "https://github.com/kelvinzer0/curl-impersonate-php",
+            "keywords": [
+                "browser",
+                "curl",
+                "http",
+                "http-client",
+                "impersonation"
+            ],
+            "support": {
+                "issues": "https://github.com/kelvinzer0/curl-impersonate-php/issues",
+                "source": "https://github.com/kelvinzer0/curl-impersonate-php/tree/v3.2"
+            },
+            "install-path": "../kelvinzer0/curl-impersonate-php"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
